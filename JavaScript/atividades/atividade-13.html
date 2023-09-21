@@ -1,0 +1,91 @@
+<script>
+
+    let fruta = prompt('Digite uma fruta','');
+    let imgFruta;
+
+    switch (fruta) { 
+        
+        case 'abacaxi': 
+            imgFruta = '<img src="imagens/abacaxi.jpg" alt="foto de abacaxi" width="250px">';
+            frutaIngles = 'Pineapple';
+            break;
+
+        case 'banana':
+            imgFruta = '<img src="imagens/banana.jpg" alt="foto de banana" width="250px">';
+            frutaIngles = 'Banana';
+            break;
+            
+        case 'caqui':
+            imgFruta = '<img src="imagens/caqui.jpg" alt="foto de caqui" width="250px">';
+            frutaIngles = 'Khaki';
+            break;
+
+        case 'coco':
+            imgFruta = '<img src="imagens/coco.jpg" alt="foto de caqui" width="250px">';
+            frutaIngles = 'Coconut';
+            break;
+
+        case 'goiaba':
+            imgFruta = '<img src="imagens/goiaba.jpg" alt="foto de caqui" width="250px">';
+            frutaIngles = 'Guava';
+            break;
+
+        case 'laranja':
+            imgFruta = '<img src="imagens/laranja.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Orange'
+            break;
+
+        case 'maça':
+            imgFruta = '<img src="imagens/maca.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Apple'
+            break;
+
+        case 'mamão':
+            imgFruta = '<img src="imagens/mamao.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Papaya'
+            break;
+
+        case 'manga':
+            imgFruta = '<img src="imagens/manga.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Mango'
+            break;
+
+        case 'melancia':
+            imgFruta = '<img src="imagens/melancia.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Watermelon'
+            break;
+
+        case 'melão':
+            imgFruta = '<img src="imagens/melao.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Melon'
+            break;
+
+        case 'morango':
+            imgFruta = '<img src="imagens/morango.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Strawberry'
+            break;
+
+        case 'pêra':
+            imgFruta = '<img src="imagens/pera.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Pear'
+            break;
+
+        case 'tangerina':
+            imgFruta = '<img src="imagens/tangerina.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Tangerine'
+            break;
+
+        case 'uva':
+            imgFruta = '<img src="imagens/uva.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Grape'
+            break;
+
+        default:
+            imgFruta = '<img src="imagens/caixa.jpg" alt="foto de caqui" width="250px">'
+            frutaIngles = 'Digite uma fruta válida'
+            break;
+    }
+
+    document.write ('Nome da fruta em português: <font color=blue>' + fruta + '</font> <br>' + imgFruta + '<br> Nome da fruta em inglês: <font color=red>' + frutaIngles + '</font>')
+
+</script>
