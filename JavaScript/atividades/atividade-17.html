@@ -1,0 +1,16 @@
+<script>
+
+    /* 
+        Crie um programa que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço
+        de custo receberá um acréscimo de acordo com um percentual informado pelo usuário
+    */
+
+    let custo = parseInt(prompt('Digite o valor de custo'));
+    let percentual = parseInt(prompt('Digite uma porcentagem'));
+    let valorVenda = parseFloat(custo + ((percentual * 100)/percentual))
+    
+
+    document.write('Valor de custo: <b>' + custo + '</b><br>Percentual de venda: <b>' + percentual + '%<b><br>Valor de venda: <b>' + valorVenda + '<b>')
+
+
+</script>

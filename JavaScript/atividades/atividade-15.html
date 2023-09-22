@@ -1,0 +1,41 @@
+<script>
+
+    /*
+        Crie um programa em JavaScript que permita ao usuário inserir os valores dos três lados 
+        de um triângulo. 
+        
+        O programa deverá exibir os valores dos lados um abaixo do outro e,
+        em seguida, determinar e mostrar o tipo de triângulo com base nos valores fornecidos.
+
+        O tipo de triângulo pode ser "equilátero" se todos os lados forem iguais, "isóceles"
+        se pelo menos dois lados forem iguais, ou "escaleno" se todos os lados forem diferentes.
+
+        Certifique-se de exibir claramente os valores dos lados e o tipo de triângulo no resultado
+        final.  
+    */
+
+    let ladoA = prompt('Digite o valor do primeiro lado do triângulo')
+    let ladoB = prompt('Digite o valor do segundo lado do triângulo')
+    let ladoC = prompt('Digite o valor do terceiro lado do triângulo')
+
+    if (ladoA === ladoB && ladoB === ladoC && ladoC === ladoA) { 
+        definicao = 'Os lados do triângulo têm valores iguais, é um <font color= blue>Triângulo equilátero</font>'
+    }
+    else if (ladoA === ladoB || ladoB === ladoC || ladoC === ladoA) { 
+        definicao = 'Os lados do triângulo têm dois valores iguais, é um <font color= blue>Triângulo isóceles</font>'
+    }
+
+    else {
+        definicao = 'Os lados do triângulo têm valores diferentes, é um <font color= blue>Triângulo escaleno</font>'
+    }
+    
+
+         
+
+
+    
+
+    document.write('Lado A: ' + ladoA + '<br>Lado B: ' + ladoB + '<br>Lado C: ' + ladoC + '<br>' + definicao)
+
+
+</script>
