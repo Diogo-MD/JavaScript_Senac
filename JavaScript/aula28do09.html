@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+        // Propriedade lenght serve para exibir quantos caracteres contém uma string
+        console.log('Cristiano Maia'.length);
+
+        console.log('Diogo Madeira'.length);
+
+
+        // Propriedade charArt serve para retornar o caracterer na posição denominada pelo valor
+        console.log('Cristiano Maia'.charAt(10));
+
+        console.log('Diogo Madeira'.charAt(0));
+
+
+        let nome = 'Diogo Madeira';
+        // Propriedade idexOf serve para retornar o valor com a posição da letra definida
+        console.log(nome.indexOf('M'));
+
+
+        // Propriedade replace serve para realocar uma string em outra predefinida , no caso trocar 'Madeira' por 'Santos'
+        console.log(nome.replace('Madeira','Santos'));
+
+ 
+        // Propriedade substr retorna a string selecionada de acordo com a posição e com os números definidos 
+        console.log(nome.substr(4, 6));
+
+
+        // Propriedade toUpperCase retorna a string selecionada em caixa alta 
+        console.log(nome.toUpperCase());
+
+
+        // Propriedade toLowerCase retorna a string selecionada em caixa alta
+        console.log(nome.toLowerCase());
+
+
+        let texto = ' Aula JavaScript ';
+        //Propriedade trim serve para remover os espaços vazios no começo e fim da string caso houver
+        console.log('=' + texto + '=');
+        console.log('=' + texto.trim() + '=');
+
+
+        let numero = 10.355978;
+        // Propriedade Math.ceil serve para arredondar o valor para cima
+        console.log(numero)
+        console.log(Math.ceil(numero));
+
+
+        // Propriedade Math.floor serve para arredondar o valor para baixo
+        console.log(Math.floor(numero)); 
+
+        
+        // Propriedade Math.round serve para arredondar o valor de acordo com as regras aritméticas
+        console.log(Math.round(10.5));
+        console.log(Math.round(10.4));
+
+
+        // Propriedade Math.random serve para gerar um número aleatório entre 0 e 1
+        let x = Math.random();
+        console.log(x)
+
+
+        
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
