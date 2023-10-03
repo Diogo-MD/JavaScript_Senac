@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Mouse</title>
+</head>
+<body>
+    <script>
+
+        function acao(){
+            alert('Evento disparado!');
+        }
+
+    </script>
+    
+    <h2>Eventos de mouse aplicador em botões</h2>
+
+    <!-- Evento onclick "Ao clicar" -->
+    <button onclick="acao()">Evento onclick</button><br><br>
+
+    <!-- Evendo ondblckick "Ao clicar duas vezes" -->
+    <button ondblclick="acao()">Evendo ondblckick</button><br><br>
+
+    <!-- Evento onmouseup "Quando segura o clique a ação ocorre ao soltar o clique" -->
+    <button onmouseup="acao()">Evento onmouseup</button><br><br>
+
+    <!-- Evento onmouseover "Ao passar o mouse no elemento" -->
+    <button onmouseover="acao()">Evento onmouseover</button><br><br>
+
+    <!-- Evento onmouseout "Quando o mouse sai da area do elemento" -->
+    <div onmouseout="acao()" style="background-color: blue; height: 35px; width: 100px;"><p style="color: white; text-align: center;">Evento onmouseout</p></div>
+
+</body>
+</html>
