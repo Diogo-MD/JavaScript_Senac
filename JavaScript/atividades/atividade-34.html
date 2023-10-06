@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 34</title>
+</head>
+
+<body>
+
+    <style>
+        #container {
+            border: solid black 2px;
+            width: 410px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #container #container-tit {
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 7px;
+            margin-top: 2px;
+        }
+
+        #container #conatiner-contador {
+            text-align: left;
+        }
+
+        #container #inp-contador {
+            background-color: wheat;
+            border: 0;
+            font-size: 32px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px;
+            text-align: center;
+        }
+
+        .btn-valores {
+            background-color: black;
+            color: white;
+            padding: 6px;
+            font-size: larger;
+            margin-left: 35px;
+            margin-right: 35px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+    </style>
+
+    <script>
+
+
+
+        function incrementarValor() {
+
+            let contadorInput = document.getElementById('inp-contador');
+            let valorAtual = parseInt(contadorInput.value);
+            valorAtual++;
+            contadorInput.value = valorAtual;
+        }
+
+        function decrementarValor() {
+
+            let contadorInput = document.getElementById('inp-contador');
+            let valorAtual = parseInt(contadorInput.value);
+            valorAtual--;
+            contadorInput.value = valorAtual;
+        }
+
+
+    </script>
+
+
+
+    <div id="container">
+        <h2 id="container-tit">Manipulação de DOM com JavaScript</h2>
+        <h2 id="conatiner-contador">Contador:</h2>
+        <input type="text" disabled id="inp-contador" value="0">
+        <button class="btn-valores" onclick="incrementarValor()">Incrementar</button>
+        <button class="btn-valores" onclick="decrementarValor()">Decrementar</button>
+        <h2 id="conatiner-contador">Desenvolvedor: Diogo</h2>
+    </div>
+
+
+
+</body>
+
+</html>
