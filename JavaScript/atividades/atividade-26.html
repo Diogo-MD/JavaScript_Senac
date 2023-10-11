@@ -1,0 +1,30 @@
+<script>
+
+
+    let valor1 = parseInt(prompt('Digite o 1º valor', ''));
+    let operacao = prompt('Digite a operação que deseja realizar', '');
+    let valor2 = parseInt(prompt('Digite o 2º valor', ''));
+    
+
+    if (operacao == '*') {
+        resultado = valor1 * valor2
+        op = 'Multiplicação'
+    } else if (operacao == '/') {
+        resultado = valor1 / valor2
+        op = 'Divisão'
+    } else if (operacao == '+') {
+        resultado = valor1 + valor2
+        op = 'Soma'
+    } if (operacao == '-') {
+        resultado = valor1 - valor2
+        op = 'Subtração'
+    }
+
+
+    document.write('Primeiro valor: ' + valor1 + '<br>');
+    document.write('Segundo valor: ' + valor2 + '<br>');
+    document.write('Operação escolhida: ' + op + '<br>');
+    document.write('Resultado: ' + resultado)
+
+
+</script>

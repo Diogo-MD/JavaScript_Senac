@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 25</title>
+</head>
+<body>
+    <h1>Funções de callback em JavaScript</h1>
+    <button id="botao1" onclick="mudarCorV()">Alterar fundo para cinza</button>
+    <button id="botao2" onclick="mudarCorB()">Alterar fundo para azul</button>
+    <button id="botao3" onclick="mensagemNoAlert()">Mensagem no alert</button>
+    <button id="botao4" onclick="mensagemNaPagina()">Mensagem na página</button>
+
+    <script>
+
+        
+        function mudarCorV(){
+            document.bgColor='gray';
+        }
+
+        function mudarCorB(){
+            document.bgColor='blue';
+        }
+
+        function mensagemNoAlert(){
+           alert('Que aula show!\nO Cristiano tem uma autoestima de dar inveja!')
+        }
+
+        function mensagemNaPagina(){
+            document.write('<h1>JavaScript me da dor de cabeça e ainda está no básico</h1>')
+        }
+    </script>
+</body>
+</html>
